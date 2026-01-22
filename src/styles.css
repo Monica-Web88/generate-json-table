@@ -1,0 +1,96 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d7d7f58b;
+    display: flex;
+    padding: 40px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  
+.alignClass {
+  margin: 20px;
+} 
+.mainDiv {
+  position: absolute;
+  background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.loginDiv{
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+   background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.jsonTable
+{
+  width: 1000px
+}
+/* Input fields */
+  .loginDiv input[type="text"],
+  .loginDiv input[type="password"] {
+    width: 80%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1.8px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+
+  .loginDiv input[type="text"]:focus,
+  .loginDiv input[type="password"]:focus {
+    outline: none;
+    border-color: #5b69bc;
+  }
+
+#generateBtn,.loginDiv button , .nameBtn{
+    width: fit-content;
+    padding: 14px;
+    background-color: #5b69bc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateBtn:hover,.loginDiv button:hover , .nameBtn:hover {
+    background-color: #22274f;
+  }
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+th {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(252, 189, 199);
+}
