@@ -10,9 +10,9 @@ export default function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="login" element={<Login />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="generate-json-table/" element={<Login />} />
+          <Route path="generate-json-table/login" element={<Login />} />
+          <Route path="generate-json-table/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>
