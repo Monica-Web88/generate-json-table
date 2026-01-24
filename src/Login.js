@@ -13,10 +13,10 @@ const Login = () => {
 
     if (username === "admin" && password === "admin") {
      // console.log("inside");
-      navigate("/generate-json-table/Dashboard");
+      navigate("/generate-json-table/Dashboard/");
     } else {
       alert("Invalid Login Credentials...");
-      navigate("/generate-json-table/Login");
+      navigate("/generate-json-table/Login/");
     }
   };
 
