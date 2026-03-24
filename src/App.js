@@ -11,8 +11,8 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="generate-json-table/" element={<Login />} />
-          <Route path="generate-json-table/login" element={<Login />} />
-          <Route path="generate-json-table/dashboard" element={<Dashboard />} />
+          <Route path="generate-json-table/Login" element={<Login />} />
+          <Route path="generate-json-table/Dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>
