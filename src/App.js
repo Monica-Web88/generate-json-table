@@ -8,13 +8,13 @@ import "./styles.css";
 export default function App() {
   return (
     <div>
-      <Router>
+    
         <Routes>
           <Route path="generate-json-table/" element={<Login />} />
           <Route path="generate-json-table/Login" element={<Login />} />
           <Route path="generate-json-table/Dashboard" element={<Dashboard />} />
         </Routes>
-      </Router>
+      
     </div>
   );
 }

@@ -12,7 +12,7 @@ const Login = () => {
    // console.log("inside handle");
 
     if (username === "admin" && password === "admin") {
-     // console.log("inside");
+      console.log("inside");
       navigate("/generate-json-table/Dashboard/");
     } else {
       alert("Invalid Login Credentials...");
