@@ -14,6 +14,7 @@ const Login = () => {
     if (username === "admin" && password === "admin") {
       console.log("inside");
       navigate("/dashboard");
+      navigate(-1);
     } else {
       alert("Invalid Login Credentials...");
       navigate("/login");
