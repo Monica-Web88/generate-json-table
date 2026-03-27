@@ -8,6 +8,14 @@ const Login = () => {
 
   const navigate = useNavigate();
 
+  const checkPassword = (username,password)=>
+  {
+    if (username === "admin" && password === "admin") 
+      return true;
+      else
+      return false;
+  }
+/*
   const handleClick = (e) => {
    // console.log("inside handle");
 
@@ -18,7 +26,22 @@ const Login = () => {
       alert("Invalid Login Credentials...");
       navigate("/login");
     }
-  };
+  };*/
+
+  const handleLogin = async (e) => {
+  e.preventDefault();
+
+ try {
+    await checkPassword(username, password);
+    setTimeout(navigate, 0, "/dashboard");
+  } catch (error) {
+    console.log(error);
+    alert("Invalid Login Credentials...");
+    navigate("/login");
+  }
+
+};
+
 
   return (
     <div className="loginDiv">
@@ -48,7 +71,7 @@ const Login = () => {
         />
         <br />
         <br />
-        <button type="submit" onClick={handleClick}>
+        <button type="submit" onClick={handleLogin}>
           Login
         </button>
         </form>
